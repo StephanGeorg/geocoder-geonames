@@ -1,7 +1,7 @@
 
 var should            = require('should'),
     GeocoderGeonames  = require('../lib/geocoder-geonames'),
-    USERNAME          = 'luftlinie.org';
+    USERNAME          = '';
 
 describe('GeocoderGeonames API Wrapper', function(){
 
