@@ -1,12 +1,12 @@
 {
-  "name": "geocoder-geoames",
+  "name": "geocoder-geonames",
   "description": "Promises based node.js wrapper for geonames.org",
   "main": "index.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/StephanGeorg/geocoder-geonames.git"
+    "url": "git+https://github.com/StephanGeorg/geocoder-geonames.git"
   },
   "scripts": {
     "test": "make test"
@@ -35,5 +35,10 @@
   "bugs": {
     "url": "https://github.com/StephanGeorg/geocoder-geonames/issues"
   },
-  "tonicExampleFilename": "example/example.js"
+  "tonicExampleFilename": "example/example.js",
+  "homepage": "https://github.com/StephanGeorg/geocoder-geonames#readme",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  }
 }

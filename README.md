@@ -27,7 +27,7 @@ The constructor function also takes an optional configuration object:
 
 ### Search ###
 ```javascript
-  geocoder.run('search',{
+  geocoder.get('search',{
     q: 'Berlin'
   })
   .then(function(response){

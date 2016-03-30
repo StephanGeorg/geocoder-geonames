@@ -1,1 +1,1 @@
-module.exports = require('./lib/geocoder-arcgis');
+module.exports = require('./lib/geocoder-geonames');
