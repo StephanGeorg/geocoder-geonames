@@ -1,7 +1,7 @@
 
 var should            = require('should'),
     GeocoderGeonames  = require('../lib/geocoder-geonames'),
-    USERNAME          = '';
+    USERNAME          = 'demo';
 
 describe('GeocoderGeonames API Wrapper', function(){
 
@@ -18,8 +18,7 @@ describe('GeocoderGeonames API Wrapper', function(){
     it('with additional arguments', function() {
       geocoder = new GeocoderGeonames({
         username: USERNAME
-      }).should.not.throw();;
-
+      }).should.not.throw();
     });
 
   });
@@ -35,9 +34,20 @@ describe('GeocoderGeonames API Wrapper', function(){
     });
 
 
-    it('should be able to geocode', function(done) {
+    it('service search with name "Berlin"', function(done) {
       geocoder.get('search',{
-        q: 'Berlin'
+        q: 'Berlin',
+        lang: 'ru'
+      }).then(function(res) {
+        res.should.be.json;
+        done();
+      });
+    });
+
+    it('service get with id "2825297"', function(done) {
+      geocoder.get('get',{
+        geonameId: 2825297,
+        lang: 'zh'
       }).then(function(res) {
         res.should.be.json;
         done();
@@ -47,11 +57,5 @@ describe('GeocoderGeonames API Wrapper', function(){
 
   });
 
-
-  /*describe('Validations',function(){
-
-
-
-  });*/
 
 });

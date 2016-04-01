@@ -2,7 +2,7 @@
   "name": "geocoder-geonames",
   "description": "Promises based node.js wrapper for geonames.org",
   "main": "index.js",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "private": false,
   "repository": {
     "type": "git",
