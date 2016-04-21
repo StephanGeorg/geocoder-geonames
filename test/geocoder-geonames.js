@@ -1,7 +1,7 @@
 
 var should            = require('should'),
     GeocoderGeonames  = require('../lib/geocoder-geonames'),
-    USERNAME          = 'demo';
+    USERNAME          = process.env.GEONAMES_USERNAME || null;
 
 describe('GeocoderGeonames API Wrapper', function(){
 
