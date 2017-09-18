@@ -23,7 +23,10 @@ var GeocoderGeonames = require('geocoder-geonames'),
 The constructor function also takes an optional configuration object:
 
 * premium: true || false
+* token: specify
 * endpoint: specify
+
+Be careful, if you set premium to true you will need to specify a token.
 
 ### Search ###
 ```javascript
