@@ -15,6 +15,15 @@ describe('GeocoderGeonames API Wrapper', function(){
       }).should.throw();
     });
 
+    it('without token but with premium configuration', function() {
+      (function() {
+        geocoder = new GeocoderGeonames({
+          username: USERNAME,
+          premium: true
+        });
+      }).should.throw();
+    });
+
     it('with additional arguments', function() {
       geocoder = new GeocoderGeonames({
         username: USERNAME
